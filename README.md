@@ -52,8 +52,7 @@ This repository contains a simple email signature generator for employees of The
 └─ fonts/
      ├─ ActaHeadline-Bold.otf
      ├─ SofiaProBold.otf
-     ├─ SofiaProLight.otf
-     └─ ... other font files ...
+     └─ SofiaProLight.otf
 ```
 
 ### Key Files
