@@ -11,7 +11,7 @@ if (isset($_POST['password'])) {
         // Password is correct, set session variable
         $_SESSION['authenticated'] = true;
 
-        // Redirect to the site
+        // Redirect to authorized.php
         header('Location: authorized.php');
         exit();
     } else {
