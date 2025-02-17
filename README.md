@@ -148,9 +148,9 @@ This repository contains a simple email signature generator for employees of The
 
 ## License
 
-This project is not under a specific open-source license by default.  
-- If you plan to share or modify it, you can add a license (e.g., MIT, Apache 2.0, etc.).  
-- If it’s strictly internal, you may omit a license file.  
+This project is distributed under the GNU General Public License v3.0 (GPL-3.0).
+You should have received a copy of the GNU General Public License along with this program.
+If not, see https://www.gnu.org/licenses/.
 
 ---
 
