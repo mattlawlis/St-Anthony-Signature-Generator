@@ -1,4 +1,6 @@
-/* Import Custom Fonts */
+/* css/styles.css */
+
+/* Custom Fonts */
 @font-face {
   font-family: 'ActaHeadline-Bold';
   src: url('../fonts/ActaHeadline-Bold.otf') format('opentype');
@@ -16,9 +18,16 @@
 body, p, label, button, input, select, textarea {
   font-family: 'SofiaProLight', Arial, sans-serif;
   color: #404040;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
+a {
+  text-decoration: none !important; /* remove underline */
+  color: #404040;
+}
+
+/* Header, Section Headings, etc. */
 .header {
   background-color: #FFF;
   padding: 20px 0;
@@ -35,7 +44,6 @@ body, p, label, button, input, select, textarea {
   font-size: 36px;
 }
 
-/* Mobile Warning (hidden by default) */
 #mobile-warning {
   display: none;
   font-family: 'SofiaProBold', sans-serif;
@@ -50,7 +58,7 @@ body, p, label, button, input, select, textarea {
   margin-right: 5px;
 }
 
-/* Section Headings */
+/* Section Headings ("Your Information" and "Live Preview") */
 .acta-headline {
   font-family: 'ActaHeadline-Bold', sans-serif;
   text-transform: uppercase;
@@ -79,8 +87,7 @@ body, p, label, button, input, select, textarea {
 .signature {
   max-width: 600px;
   padding: 10px;
-  /* Force Arial for everything except where explicitly overridden */
-  font-family: "Arial", sans-serif !important;
+  font-family: "Arial", sans-serif !important; /* Force Arial except for name/awards/footer */
   line-height: normal !important;
 }
 
@@ -91,6 +98,7 @@ body, p, label, button, input, select, textarea {
   letter-spacing: 0.5pt;
   margin: 0 0 5px 0;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 
 /* Title in Arial */
@@ -98,47 +106,51 @@ body, p, label, button, input, select, textarea {
   font-size: 9pt;
   margin: 0;
   text-transform: uppercase;
+  line-height: 1.2;
 }
-/* Title-line */
-.signature .title-line {
-  width: 65px;
-  border-bottom: 2px solid #404040;
+
+/* Divider row */
+.signature .divider {
   margin: 10px 0;
 }
 
-/* Address, phone, website, etc. in Arial */
+/* Address & phone lines with reduced spacing for Outlook */
 .signature .address,
 .signature .phone {
   margin: 0;
   line-height: 1.2;
   font-size: 9pt;
 }
-.signature .website,
-.signature .awards,
-.signature .footer {
-  font-size: 9pt;
-  margin: 0 0 5px 0;
-}
+
+/* Website line with minimal vertical spacing */
 .signature .website {
-  margin: 10px 0;
+  font-size: 9pt;
+  margin: 5px 0;
+  font-weight: bold;
 }
+
+/* Logo with minimal margin top/bottom */
 .signature .logo {
-  margin: 10px 0;
+  margin: 5px 0;
 }
+
 /* Awards in Times New Roman */
 .signature .awards {
   font-family: "Times New Roman", serif !important;
   font-size: 7.5pt;
+  margin: 5px 0;
+  line-height: 1.2;
 }
+
 /* Footer in Times New Roman */
 .signature .footer {
   font-family: "Times New Roman", serif !important;
   font-size: 7.5pt;
-  margin: 10px 0 0 0;
-  padding: 0;
+  margin: 5px 0 0 0;
+  line-height: 1.2;
 }
 
-/* Copy Button Styling */
+/* Copy Button */
 #copyBtn {
   margin-top: 20px;
   background-color: #1c1c1c !important;
@@ -159,6 +171,7 @@ body, p, label, button, input, select, textarea {
 .instruction-card .card-content ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 .instruction-card .card-content ul li {
   position: relative;
@@ -166,7 +179,7 @@ body, p, label, button, input, select, textarea {
   margin-bottom: 10px;
 }
 .instruction-card .card-content ul li::before {
-  content: "\f00c";
+  content: "\\f00c";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
@@ -175,7 +188,7 @@ body, p, label, button, input, select, textarea {
   color: #404040;
 }
 
-/* Responsive: On mobile/tablet, hide all content except the header (which includes the mobile warning) */
+/* Responsive: On mobile/tablet, hide all content except the header */
 @media (max-width: 768px) {
   body > :not(.header) {
     display: none;
