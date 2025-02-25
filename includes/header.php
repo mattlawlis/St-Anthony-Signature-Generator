@@ -26,9 +26,6 @@ header('Location: index.php');
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Custom JavaScript (defer or place at end of body, your preference) -->
-  <script src="js/scripts.js" defer></script>
 </head>
 <body>
   <!-- Header Section with St Anthony Hotel Logo -->
